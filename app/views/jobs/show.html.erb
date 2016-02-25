@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<h2>Your Reference ID number is : <%= @job.id %> </h2>
+<p>
+  <strong>First name:</strong>
+  <%= @job.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @job.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @job.email %>
+</p>
+
+<p>
+  <strong>Home address:</strong>
+  <%= @job.home_address %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @job.country %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>
